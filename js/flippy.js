@@ -168,20 +168,30 @@ var Flippy = (function(){
 })();
 
 $(document).ready(function(){
+	// Flippy.start();
+	// $('#gameZone').mousedown(function(e){
+	// 	if( Flippy.active() ){
+	// 		Flippy.move();
+	// 	}
+	// 	if( !Flippy.playing() ){
+	// 		Flippy.start();
+	// 	}
+	// });
+});
+
+$(document).bind('pageinit', function(){
+	var gameZone = $('#gameZone');
+	// gameZone.bind('vmousedown', function(){
+	// 	$('#player').css('background-color', 'black');
+	// });
 	Flippy.start();
-	$('#gameZone').mousedown(function(e){
+	// $('#gameZone').mousedown(function(e){
+	gameZone.bind('vmousedown', function(){
 		if( Flippy.active() ){
 			Flippy.move();
 		}
 		if( !Flippy.playing() ){
 			Flippy.start();
 		}
-	});
-});
-
-$(document).bind('pageinit', function(){
-	var gameZone = $('#gameZone');
-	gameZone.bind('vmousedown', function(){
-		$('#player').css('background-color', 'black');
 	});
 });
