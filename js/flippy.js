@@ -178,3 +178,12 @@ $(document).ready(function(){
 		}
 	});
 });
+
+$(document).bind('pageinit', function(){
+	var gameZone = $('#gameZone');
+	if( gameZone.hasOwnProperty('vmousedown') ){
+		gameZone.vmousedown(function(){
+			alert('vmousedown event');
+		});
+	}
+});
