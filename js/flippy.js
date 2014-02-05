@@ -182,6 +182,6 @@ $(document).ready(function(){
 $(document).bind('pageinit', function(){
 	var gameZone = $('#gameZone');
 	gameZone.bind('vmousedown', function(){
-		alert('vmousedown event');
+		$('#player').css('background-color', 'black');
 	});
 });
