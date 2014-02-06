@@ -31,6 +31,7 @@
 	background-color: red;
 	position: fixed;
 	left: 6.5%;
+	top: 20%;
 	border-radius: 10px;
 	z-index: 2;
 }

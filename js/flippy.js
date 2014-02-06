@@ -180,7 +180,6 @@ var Flippy = (function(){
 // });
 
 $(document).bind('pageinit', function(){
-	Flippy.start();
 	var gameZone = $('#gameZone');
 	gameZone.bind('vmousedown', function(){
 		if( Flippy.active() ){
