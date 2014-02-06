@@ -94,3 +94,8 @@
 	animation-delay: 3.75s;
 	-webkit-animation-delay: 3.75s;
 }
+
+
+.ui-loader{
+	display: none;
+}
